@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+ <style type="text/css">
+ html,body{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: blue;
+ }
+ </style>
+</head>
+<body id="s">
+<div style="color:yellow">请在空白处点击</div>
+<img src="2.webp.jpg">
+<script type="text/javascript">
+s.onclick = s1;
+function s1 (e) {
+ var x = e.offsetX;
+ var y = e.offsetY;
+ var a1 =document.createElement('span');
+ a1.innerHTML = '☃'
+ a1.style.color = 'red';
+ a1.style.fontSize='100px';
+ a1.style.position ='absolute';
+ a1.style.left = x+'px';
+ a1.style.top =y+'px';
+ s.appendChild(a1);
+}
+</script>
+</body>
+</html>
